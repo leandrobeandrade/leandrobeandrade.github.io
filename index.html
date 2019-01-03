@@ -3,28 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Leandro</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="css/bootstrap-4.2/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome-5.6.3/css/all.min.css">
+	<link rel="stylesheet" href="all.css">
 </head>
 <body>
 
-	<style>
-		
-	</style>
-	
-		<h1><a href="https://leandrobeandrade.github.io.">Link</a></h1>
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<nav></nav>
+
+	<div class="conteudo"></div>
+
+	<!-- JS -->
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 	<script>
-
-		$(function() {
-			alert('cdccw');
-		})
+		$('nav').load('components/menu.html');
+		$('.conteudo').load('components/home.html');
+		function linkSobre() {
+			$('.conteudo').empty();
+			$('.conteudo').load('components/sobre.html');
+			$('.sobre').addClass('active');
+			$('.nav-item').not('.sobre').removeClass('active');
+		}
+		
+		function linkRedes() {
+			$('.conteudo').empty();
+			$('.conteudo').load('components/redes.html');
+			$('.redes').addClass('active');
+			$('.nav-item').not('.redes').removeClass('active');
+		}
+		function linkContato() {
+			$('.conteudo').empty();
+			$('.conteudo').load('components/contato.html');
+			$('.contato').addClass('active');
+			$('.nav-item').not('.contato').removeClass('active');
+		}
+		function linkHome() {
+			$('.conteudo').empty();
+			$('.conteudo').load('components/home.html');
+			$('.home').addClass('active');
+			$('.nav-item').not('.home').removeClass('active');
+		}
 		
 	</script>
 
 </body>
-</html>
+</html> 
