@@ -1,5 +1,6 @@
 $('nav').load('components/menu.html');
 $('.conteudo').load('components/home.html');
+$('.conteudo').addClass('animacao');
 
 function linkSobre() {
 	$('.conteudo').empty();
@@ -7,7 +8,6 @@ function linkSobre() {
 	$('.sobre').addClass('active');
 	$('.nav-item').not('.sobre').removeClass('active');
 }
-
 function linkConhec() {
 	$('.conteudo').empty();
 	$('.conteudo').load('components/conhecimentos.html');
