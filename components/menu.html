@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     
-    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav">
             <li class="nav-item home active">
                 <a class="nav-link" onclick="linkHome()">Home <span class="sr-only">(current)</span></a>
@@ -17,33 +17,12 @@
         </ul>
     </div>
     <a class="navbar-brand mr-auto mr-lg-0 text-right">leandrobeandrade.github.io</a>
-    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
     </button>
 </nav>
                                                     <!-- CSS -->
 <style>
-@media (max-width: 991.98px) {
-    .offcanvas-collapse {
-        position: fixed;
-        top: 56px; /* Height of navbar */
-        bottom: 0;
-        left: 100%;
-        width: 100%;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        overflow-y: auto;
-        visibility: hidden;
-        background-color: #343a40;
-        transition-timing-function: ease-in-out;
-        transition-duration: .3s;
-        transition-property: left, visibility;
-    }
-    .offcanvas-collapse.open {
-        left: 0;
-        visibility: visible;
-    }
-}
 .nav-link {
     cursor: pointer;
 }
@@ -51,13 +30,3 @@
     color: #FFF !important;
 }
 </style>
-                                                    <!-- JS -->
-<script type="text/javascript">
-    $(function() {
-        'use strict'
-
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-</script>
