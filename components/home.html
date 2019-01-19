@@ -1,17 +1,19 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
 <div class="container">
 	<div class="row">
-		<div class="col-md-8 offset-md-2">
+		<div class="col">
 			<div class="media">
 				<div class="media-body text-center">
 					<h2 class="mb-3">Leandro Bezerra de Andrade</h2><hr>
 					<p><i class="fas fa-user-circle"></i> Brasileiro | <i class="fas fa-american-sign-language-interpreting"></i> casado | <i class="fas fa-birthday-cake"></i> 34 anos</p>
 					<p><i class="fas fa-home"></i> Residente na cidade de Indaiatuba-Sp</p>
-					<p><i class="fas fa-envelope"></i> leandrobe.andrade@gmail.com | <i class="fas fa-phone-volume"></i> (19) 99230-0312</p>
+					<p><i class="fas fa-envelope"></i> leandrobe.andrade@gmail.com <span class="outch">|</span> <br class="hidden"> <i class="fas fa-phone-volume"></i> (19) 99230-0312</p>
 				</div>
 				<img src="imgs/teste.png" alt="Imagem Perfil">
 			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
 			<div class="alerts">
 				<h2 class="text-center">Um pouco mais:</h2>
 				<hr>
@@ -31,24 +33,31 @@
 <style>
 .row {
 	margin-top: 100px;
-	margin-bottom: 20px;
 }
 .media {
 	background-color: #FFF;
 	padding-top: 15px;
 	border-bottom: solid 4px #2ECC71;
+	max-width: 60%;
+	margin: 0 auto;
+}
+p {
+	color: #878787;
+}
+.outch {
+	display: inline-block;
+}
+.hidden {
+	display: none;
 }
 img {
 	max-width: 200px;
 	max-height: 200px;
 	margin-top: 50px;
 }
-p {
-	color: #878787;
-}
 .alerts {
 	background-color: #FFF;
-	margin-top: 50px;
+	margin-top: 2px;
 	border-bottom: solid 4px #2ECC71;
 	padding: 15px;
 }
@@ -56,9 +65,20 @@ code {
 	color: #878787;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 576px) { 
 	img {
 		display: none;
+	}
+	.media {
+		max-width: 100%;
+		margin-bottom: -50px;
+	}
+	.outch {
+		visibility: hidden;
+		margin-bottom: 15px;
+	}
+	.hidden {
+		display: block;
 	}
 }
 </style>
