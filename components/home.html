@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="row">
+	<div class="row top">
 		<div class="col">
 			<div class="media">
 				<div class="media-body text-center">
@@ -11,6 +11,11 @@
 				<img src="imgs/teste.png" alt="Imagem Perfil">
 			</div>
 		</div>
+	</div>
+	<div class="row justify-content-center">
+		<a class="download" href="/images/myw3schoolsimage.jpg" download>Baixar Currículo 
+			<i class="far fa-file-pdf"></i>
+		</a>
 	</div>
 	<div class="row">
 		<div class="col">
@@ -32,6 +37,9 @@
 
 <style>
 .row {
+	margin-bottom: 20px;
+}
+.top {
 	margin-top: 100px;
 }
 .media {
@@ -55,6 +63,17 @@ img {
 	max-height: 200px;
 	margin-top: 50px;
 }
+.download {
+	background: #fff;
+	color:  #2ECC71;
+	padding: 10px;
+	border: solid 1px #2ECC71;
+}
+.download:hover {
+	text-decoration: none !important;
+	color: #FFF;
+	background-color: #2ECC71;
+}
 .alerts {
 	background-color: #FFF;
 	margin-top: 2px;
@@ -65,13 +84,12 @@ code {
 	color: #878787;
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 763px) { 
 	img {
 		display: none;
 	}
 	.media {
 		max-width: 100%;
-		margin-bottom: -50px;
 	}
 	.outch {
 		visibility: hidden;
