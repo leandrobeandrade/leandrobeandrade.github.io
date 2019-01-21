@@ -10,7 +10,7 @@ body {
 	animation-duration: 0.5s;
 	animation-timing-function: ease;
 	animation-play-state: running;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 	/* animation-iteration-count: 5;
 	animation-direction: alternate; */
 }
