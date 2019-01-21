@@ -1,9 +1,6 @@
 $('nav').load('components/menu.html');
 $('.conteudo').load('components/home.html');
-
-setTimeout(function() {
-	$('.conteudo').addClass('animacao');
-},2000);	
+$('.conteudo').addClass('animacao');
 	
 function linkSobre() {
 	$('.conteudo').empty();
