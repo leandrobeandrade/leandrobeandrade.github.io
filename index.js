@@ -3,7 +3,7 @@ $('.conteudo').load('components/home.html');
 
 setTimeout(function() {
 	$('.conteudo').addClass('animacao');
-}10000);	
+},2000);	
 	
 function linkSobre() {
 	$('.conteudo').empty();
