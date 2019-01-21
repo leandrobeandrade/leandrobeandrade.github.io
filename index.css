@@ -7,10 +7,10 @@ body {
 }
 .animacao {
     animation-name: slide;
-	animation-duration: 0.7s;
+	animation-duration: 0.9s;
 	animation-timing-function: ease;
 	animation-play-state: running;
-	animation-delay: 1.5s;
+	animation-delay: 2s;
 	/* animation-iteration-count: 5;
 	animation-direction: alternate; */
 }
