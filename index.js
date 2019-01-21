@@ -1,7 +1,10 @@
 $('nav').load('components/menu.html');
 $('.conteudo').load('components/home.html');
-$('.conteudo').addClass('animacao');
 
+setTimeout(function() {
+	$('.conteudo').addClass('animacao');
+}2000);	
+	
 function linkSobre() {
 	$('.conteudo').empty();
 	$('.conteudo').load('components/sobre.html');
