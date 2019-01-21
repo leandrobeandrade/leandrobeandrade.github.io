@@ -6,7 +6,6 @@ body {
 	background-color: #E5E7E9;
 }
 .animacao {
-	opacity: 0;
         animation-name: slide;
 	animation-duration: 0.6s;
 	animation-timing-function: ease;
