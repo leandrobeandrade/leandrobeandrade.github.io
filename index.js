@@ -1,7 +1,7 @@
 $('nav').load('components/menu.html');
 $('.conteudo').load('components/home.html');
 $('.conteudo').addClass('animacao');
-
+	
 function linkSobre() {
 	$('.conteudo').empty();
 	$('.conteudo').load('components/sobre.html');
